@@ -1,70 +1,87 @@
+$font-stack: "Apercu","Helvetica Neue",Helvetica,Arial,sans-serif;
+$primary-color: #df808f;
+$secondary-color: #003d50;
+$third-color: #e3e3e3;
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h4 {
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 
 a {
-  border-bottom: 2px dotted #003d50; }
+  border-bottom: 2px dotted $secondary-color;
+}
 
 a:link {
-  color: #003d50;
-  text-decoration: none; }
+  color: $secondary-color;
+  text-decoration: none;
+}
 
 a:visited {
-  color: #003d50;
-  text-decoration: none; }
+  color: $secondary-color;
+  text-decoration: none;
+}
 
 a:hover {
-  color: #df808f;
-  text-decoration: none; }
+  color: $primary-color;
+  text-decoration: none;
+}
 
 a:active {
-  color: #003d50;
-  text-decoration: none; }
+  color: $secondary-color;
+  text-decoration: none;
+}
 
 .h4 {
-  font: 100% "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 100% $font-stack;
   width: 100%;
-  padding-left: 25px; }
+  padding-left: 25px;
+}
 
 .container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .tab:hover {
   background-color: grey;
-  color: white; }
+  color: white;
+}
 
 .tab {
-  color: #df808f;
+  color: $primary-color;
   text-align: center;
-  font: 100% "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 100% $font-stack;
   overflow: hidden;
-  background-color: #e3e3e3;
+  background-color: $third-color;
   position: absolute;
   top: -35px;
   left: 0;
   width: 10%;
   height: 15%;
-  margin: 0; }
+  margin: 0;
+}
 
 .box {
-  background: #e3e3e3;
+  background: $third-color;
   width: 50%;
   margin-top: 30px;
   padding-bottom: 50px;
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 button {
-  font: 100% "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #df808f;
+  font: 100% $font-stack;
+  background-color: $primary-color;
   border: none;
   color: white;
   padding: 20px 32px;
@@ -73,65 +90,85 @@ button {
   display: inline-block;
   font-size: 16px;
   margin: 20px 30px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .planes img {
   position: absolute;
   width: 50px;
   height: auto;
   top: 80px;
-  margin-left: 230px; }
+  margin-left: 230px;
+}
 
 .input {
-  color: #df808f;
+  color: $primary-color;
   display: flex;
-  position: relative; }
+  position: relative;
+}
 
 .links {
   display: flex;
   flex-direction: row;
-  margin-left: 30px; }
+  margin-left: 30px;
+}
 
 p {
   margin: 2px;
-  font: 100% "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 100% $font-stack;
+}
 
 input[type=text],
 select {
-  font: 100% "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 100% $font-stack;
   width: 80%;
   padding: 20px;
   margin: 8px;
   display: inline-block;
   border: 0 solid #ccc;
   border-radius: 0;
-  box-sizing: border-box; }
-
+  box-sizing: border-box;
+}
 @media (max-width: 600px) {
   .planes img {
-    display: none; }
+    display: none;
+  }
+
   a {
     display: flex;
     flex-direction: column;
     font-size: 10px;
-    align-items: center; }
+    align-items: center;
+  }
+
   p {
-    font-size: 10px; }
+    font-size: 10px;
+  }
+
   .input {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
+
   .box {
     width: 70%;
-    height: auto; }
+    height: auto;
+  }
+
   button {
     display: flex;
-    align-items: center; } }
-
+    align-items: center;
+  }
+}
 @media (min-width: 601px) and (max-width: 900px) {
   .planes img {
-    display: none; }
+  display: none;
+  }
+
   .input {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center;
+  }
+}
